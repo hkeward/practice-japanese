@@ -3,4 +3,4 @@ dist
 *.egg-info
 __pycache__
 *.pyc
-**/character_statistics.json
+**/character_stats.json
