@@ -10,7 +10,7 @@ from .character_sets.hiragana import Hiragana
 
 def main(args):
     character_set = Hiragana[args.character_set].value
-    character_statistics = CharacterStatistics(args.character_statistics_file)
+    character_statistics = CharacterStatistics(args.statistics_file)
     character_statistics.load()
 
     def signal_handler(*args):

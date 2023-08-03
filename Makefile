@@ -13,7 +13,7 @@ bump-version:
 	major=$(echo "${current_version}" | cut  -d '.' -f 1)
 	minor=$(echo "${current_version}" | cut  -d '.' -f 2)
 	patch=$(echo "${current_version}" | cut  -d '.' -f 3)
-	new_patch=$((${patcH} + 1))
+	new_patch=$((${patch} + 1))
 	new_version="${major}.${minor}.${new_patch}"
 	sed -i "s/${current_version}/${new_version}/"
 
