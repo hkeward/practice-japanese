@@ -52,6 +52,13 @@ def cli():
         help="File to save character statistics to",
         default="character_stats.json",
     )
+    parser.add_argument(
+        "-v",
+        "--version",
+        action="version",
+        version=__version__,
+        help="Print version and exit",
+    )
 
     args = parser.parse_args()
     main(args)
