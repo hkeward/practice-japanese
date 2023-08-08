@@ -22,7 +22,21 @@ class Hiragana(Enum):
 
     y = {"や": "ya", "よ": "yo", "ゆ": "yu"}
 
-    hiragana = {**vowels, **h, **k, **m, **n, **r, **s, **t, **w, **y}
+    # dakuon
+
+    b = {"ば": "ba", "べ": "be", "び": "bi", "ぼ": "bo", "ぶ": "bu"}
+
+    d = {"だ": "da", "で": "de", "ぢ": "di", "ど": "do", "づ": "du"}
+
+    g = {"が": "ga", "げ": "ge", "ぎ": "gi", "ご": "go", "ぐ": "gu"}
+
+    p = {"ぱ": "pa", "ぺ": "pe", "ぴ": "pi", "ぽ": "po", "ぷ": "pu"}
+
+    z = {"ざ": "za", "ぜ": "ze", "じ": "ji", "ぞ": "zo", "ず": "zu"}
+
+    dakuon = {**b, **d, **g, **p, **z}
+
+    hiragana = {**vowels, **h, **k, **m, **n, **r, **s, **t, **w, **y, **dakuon}
 
     def __str__(self):
         return self._name_
