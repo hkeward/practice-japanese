@@ -9,7 +9,7 @@ A simple flashcard program to help practice Japanese characters. Per-character s
 ## Installation
 
 ```bash
-sudo python3 setup.py install
+python3 setup.py install --user
 ```
 
 This will create a CLI called `practice_japanese` on your PATH.
